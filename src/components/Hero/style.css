@@ -1,7 +1,8 @@
 .hero {
   height: 500px;
-  background-size: cover;
-  background-position: center;
+  background-color:#b5838d;
+  /* background-size: cover;
+  background-position: center; */
   position: relative;
 }
 
@@ -15,6 +16,7 @@
   left: 0;
   right: 0;
   background: black;
+  background-color: #b5838d;
 }
 
 .hero * {

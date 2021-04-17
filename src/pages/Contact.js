@@ -7,7 +7,7 @@ import Col from "../components/Col";
 function Contact() {
   return (
     <div>
-      <Hero backgroundImage="https://i.imgur.com/qkdpN.jpg">
+      <Hero>
         <h1>This is the Contact page</h1>
       </Hero>
       <Container style={{ marginTop: 30 }}>
