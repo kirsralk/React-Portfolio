@@ -3,13 +3,20 @@ import Hero from "../components/Hero";
 import Container from "../components/Container";
 import Row from "../components/Row";
 import Col from "../components/Col";
+import Logo from "../assets/KirsiRalko.png";
 
 function About() {
   return (
     <div>
       <Hero>
-        <h1>Pupster</h1>
-        <h2>They're the Good Boys and Girls</h2>
+        <img src={Logo} alt="" style={{ marginTop: 100 }}/>
+        {/* <!-- Icon Divider--> */}
+                <div class="divider-custom divider-light">
+                    <div class="divider-custom-line"></div>
+                    <div class="divider-custom-icon"><i class="fas fa-power-off"></i></div>
+                    <div class="divider-custom-line"></div>
+                </div>
+        <h3>Lawyer - Entrepreneur - Full Stack Developer</h3>
       </Hero>
       <Container style={{ marginTop: 30 }}>
         <Row>

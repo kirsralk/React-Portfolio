@@ -3,12 +3,20 @@ import Hero from "../components/Hero";
 import Container from "../components/Container";
 import Row from "../components/Row";
 import Col from "../components/Col";
+import Logo from "../assets/KirsiRalko.png";
 
 function Contact() {
   return (
     <div>
       <Hero>
-        <h1>This is the Contact page</h1>
+        <img src={Logo} alt="" style={{ marginTop: 100 }}/>
+        {/* <!-- Icon Divider--> */}
+                <div class="divider-custom divider-light">
+                    <div class="divider-custom-line"></div>
+                    <div class="divider-custom-icon"><i class="fas fa-power-off"></i></div>
+                    <div class="divider-custom-line"></div>
+                </div>
+        <h3>Lawyer - Entrepreneur - Full Stack Developer</h3>
       </Hero>
       <Container style={{ marginTop: 30 }}>
         <Row>
