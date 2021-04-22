@@ -33,7 +33,7 @@ function Projects() {
                     title={project.title}
                     img={project.img}
                     github={project.github}
-                    deploy={project.application}
+                    deploy={project.deploy}
                 /> 
                 )     
             })

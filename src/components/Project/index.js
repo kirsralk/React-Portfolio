@@ -16,8 +16,8 @@ const Project = (props) => {
             {/* Some quick example text to build on the card title and make up the bulk of
             the card's content. */}
             </Card.Text>
-            <a href={props.github}><Button variant="primary">Github</Button></a>
-            <a href={props.deploy}><Button variant="primary">Deployed</Button></a>
+            <a href={props.github} target="_blank"><Button variant="primary">Github</Button></a>
+            <a href={props.deploy} target="_blank"><Button variant="primary">Deployed</Button></a>
         </Card.Body>
 </Card>
         // <div>
