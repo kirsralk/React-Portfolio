@@ -4,6 +4,8 @@ import Container from "../components/Container";
 import Row from "../components/Row";
 import Col from "../components/Col";
 import Logo from "../assets/KirsiRalko.png";
+import Portrait from "../assets/kirsicircle.png";
+import Resume from "../assets/Kirsi Ralko Resume APRIL 2021.pdf";
 
 function About() {
   return (
@@ -19,12 +21,43 @@ function About() {
         <h3>Lawyer - Entrepreneur - Full Stack Developer</h3>
       </Hero>
       <Container style={{ marginTop: 30 }}>
-        <Row>
+      <Row>
           <Col size="md-12">
-            <h1>Welcome To Pupster!</h1>
+            {/* <!-- About Section Heading--> */}
+          <h2 class="page-section-heading text-center text-uppercase">About</h2>
+              {/* <!-- Icon Divider--> */}
+          <div class="divider-custom">
+            <div class="divider-custom-line"></div>
+            <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+            <div class="divider-custom-line"></div>
+          </div>
+
+              {/* <!-- About Section Content--> */}
+            <div class="row">
+             <img src={Portrait} class="mx-auto d-block" alt=""/>
+            </div>
+
+          <div class="row">
+            <div class="col-lg-4 ml-auto"> 
+              <p class="lead">Hi, I'm Kirsi: lawyer, lover of all things business-related, and full stack developer. I turn coffee into code.</p>
+            </div>
+            <div class="col-lg-4 mr-auto">   
+              <p class="lead">I'm excited to work on your next project using HTML, CSS, Javascript, SQL, Express, Handlebars & more. </p>
+            </div>
+          </div>
+
+            {/* <!-- About Section Button--> */}
+          
+        <div class="text-center mt-4">
+          <a class="btn btn-xl btn-outline-dark" href={Resume}>
+            <i class="fas fa-download mr-2"></i>
+            Download Resume
+          </a>
+        </div>
+
           </Col>
         </Row>
-        <Row>
+        {/* <Row>
           <Col size="md-12">
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc aliquet diam tortor, id
@@ -39,30 +72,9 @@ function About() {
               mattis risus ac quam laoreet cursus. Praesent suscipit orci neque, vestibulum
               tincidunt augue tincidunt non. Duis consequat mattis tortor vitae mattis.
             </p>
-            <p>
-              Phasellus at rutrum nisl. Praesent sed massa ut ipsum bibendum porttitor. Sed
-              malesuada molestie velit ac viverra. Quisque a ullamcorper purus. Curabitur luctus mi
-              ac mi hendrerit semper. Nulla tincidunt accumsan lobortis. Mauris convallis sapien non
-              nibh porta accumsan. Nunc volutpat tempus porttitor. Nunc congue dictum egestas.
-              Aliquam blandit mi eu urna scelerisque, vitae volutpat ligula ultricies. Maecenas vel
-              porta augue. Fusce mauris ex, dignissim et lacinia ut, tempus eget nibh.
-            </p>
-            <p>
-              Etiam ut massa efficitur, gravida sapien non, condimentum sapien. Suspendisse massa
-              tortor, facilisis in neque sit amet, scelerisque elementum tortor. Nullam eget nibh
-              sit amet odio lobortis ullamcorper. Nulla bibendum magna nec sem pulvinar lobortis.
-              Mauris et imperdiet urna, vitae lobortis dui. Nunc elementum elit mi, non mattis enim
-              congue at. Proin mi lectus, ullamcorper id hendrerit eu, ultricies vitae lacus. Nunc
-              vehicula, erat eget laoreet condimentum, felis ante malesuada leo, nec efficitur diam
-              nisi eget nisi. Cras arcu lacus, tristique in bibendum vitae, elementum eget lorem.
-              Maecenas vestibulum volutpat orci eu pharetra. Praesent vel blandit ante, nec faucibus
-              libero. Sed ultrices lorem ex, eu facilisis libero convallis ac. Vivamus id dapibus
-              eros. Nullam tempor sem rhoncus porta semper. Proin bibendum vulputate nisl, fringilla
-              interdum elit pulvinar eu. Quisque vitae quam dapibus, vestibulum mauris quis, laoreet
-              massa.
-            </p>
+
           </Col>
-        </Row>
+        </Row> */}
       </Container>
     </div>
   );
